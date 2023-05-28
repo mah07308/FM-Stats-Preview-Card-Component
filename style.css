@@ -20,6 +20,10 @@ body {
   color: hsl(277, 64%, 61%);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 25rem;
   margin: 1rem;
@@ -68,8 +72,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.stats p {
-  margin: 1rem 0;
+.stats li {
+  margin: 1.5rem 0;
 }
 
 .stat-val {
@@ -85,73 +89,80 @@ body {
   font-family: 'Lexend Deca', sans-serif;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   body {
     padding: 0;
   }
 
   .container {
     display: flex;
-    max-width: 50rem;
+    flex-direction: row-reverse;
+    max-width: 65rem;
+    /* display: flex;
+    max-width: 50rem; */
   }
 
   .image-half {
-    flex-grow: 1;
-    order: 2;
+    flex: 1 1 0;
+    /* flex-grow: 1;
+    order: 2; */
   }
 
   .image-container {
     width: 100%;
     height: 100%;
+    /* width: 100%;
+    height: 100%; */
   }
 
   .image-half img {
     height: 100%;
-
+    object-fit: cover;
     border-radius: 0 0.5rem 0.5rem 0;
+    /* height: 100%;
+    border-radius: 0 0.5rem 0.5rem 0; */
   }
 
   .text-half {
-    display: flex;
-    flex-direction: column;
+    flex: 1 1 0;
+    text-align: left;
     align-items: stretch;
     justify-content: center;
-    flex-grow: 1;
-    order: 1;
-    width: 50%;
-    text-align: left;
-    margin: 0 3rem;
-    padding: 0;
+    padding: 4rem;
+    max-width: 50%;
+    overflow: hidden;
   }
 
   .text-half h1 {
-    font-size: 1.6rem;
     line-height: 1.2;
+    padding-right: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .text-half > p {
-    font-size: 0.65rem;
-    padding-right: 2rem;
-    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    margin-bottom: 4rem;
   }
 
-  .stats {
+  .stats ul {
     display: flex;
     justify-content: space-between;
+    max-width: 80%;
   }
 
-  .stats p {
+  .stats li {
+    line-height: 1.2;
     margin: 0;
-    flex-grow: 1;
-    line-height: 1;
   }
 
   .stat-val {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .stat-name {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
