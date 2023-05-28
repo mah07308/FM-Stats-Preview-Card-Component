@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-2NHIG5y_za](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-2NHIG5y_za)
+- Live Site URL: [https://mah07308.github.io/FM-Stats-Preview-Card-Component/](https://mah07308.github.io/FM-Stats-Preview-Card-Component/)
 
 ## My process
 
